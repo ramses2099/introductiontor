@@ -548,3 +548,19 @@ A file format for making dynamic doucments with R
 """
 LEarning any programming language is really empowering your only limits are you creativity and your curiosity.
 """
+
+## Code chunk
+    - Code added in an .Rmd file
+
+## Delimiter
+    - A character that indicates the begining or end of a data item
+
+```{r} and ```
+
+## What R Markdown is
+## How to use R Markdown in RStudio to create .Rmd files
+## Structure of these files and how to format them to make reports
+## What code chunks are and how to invlude them in your documentation
+## How to take all of your analyses and ftransoform it from an .Rmd file into a report
+
+
