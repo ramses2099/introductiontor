@@ -1,8 +1,14 @@
 ## diamonds dataset
+install.packages('Tmisc')
+install.packages('SimDesign')
+
+library("tidyverse")
 library("here")
 library("skimr")
 library("janitor")
 library("palmerpenguins")
+library("Tmisc")
+library("SimDesign")
 
 head(penguins)
 skim_without_charts(penguins)
@@ -40,10 +46,19 @@ employee <- data.frame(id, name, department)
 
 print(employee)
 
+separate(employee, name, into=c('first name','last name'), sep=' ')
 
 
+penguins %>%
+  mutate(body_mass_g=body_mass_g/100)
 
 
+data("quartet")
+View(quartet)
+
+quartet %>%
+  group_by(set) %>%
+  summarise(mean(x),sd(x), mean(y), sd(y), cor(x,y))
 
 
 

@@ -339,7 +339,7 @@ A way of standardizing the organization of data within R
 
 
 ## transform data function
-    - separte()
+    - separate()
     - unite()
     - mutate()
 
@@ -352,21 +352,199 @@ department <- c("Marketin","Product Management","Services","Support")
 employee <- data.frame(id, name, department)
 
 print(employee)
+
+# separate column
+separate(employee, name, into=c('first name','last name'), sep=' ')
+
+unite(employee, first name, last name, sep=' ')
+
+penguins %>%
+  mutate(body_mass_g=body_mass_g/100)
+
 ```
 
+## Anscombe's quartet
+    - Four datasets that have nearly identical summary statistics
+
+## install.packages('Tmisc')
+
+## install.packages('SimDesign')
+## library('SimDesign')
 
 
+## packages for data visualization
+    - ggplot2
+    - Plotly
+    - Lattice
+    - RGL
+    - Dygraphs
+    - Leaflet
+    - Highcharter
+    - gganimate
+    - ggridges
+
+## Benefits of ggplot2
+    - Create different types of plots
+    - Customize the look and feel of plots
+    - Create high quality visuals
+    - Combine data manipulation and visualization
 
 
+## GGPLOT2
+    - Aesthetics
+    - Geoms
+    - Facets
+    - Labels and annotations
 
 
+## Aesthetic (R)
+- A visual property of an object in your plot
+
+## Geom (R)
+- The geometric object used to represent your data
+
+## Facets
+- Let you display smaller groups, or subsets, of your data
+
+## Labels and annotations (R)
+- Let you customize your plot
+
+```
+# Data visualization
+# ggplot2 library
+
+library("ggplot2")
+library("palmerpenguins")
+
+ggplot(data = penguins)+geom_point(mapping = aes(x=flipper_length_mm, y= body_mass_g))
+
+```
+
+## Start with the ggplot function and choose a dataset to work with
+## Add a geom_function to display your data
+## Map the variables you want to plot in the arguments of the aes() function
+
+```
+ggplot(data=<DATA>)+
+    <GEOM_FUNCTION>(mapping=aes(<AESTHETIC MAPPINGS>))
+```
+
+"""
+I felt imposter syndrome each and every day 
+"""
+
+"""
+I want to make sure that I'm constantly learning and also leveraging my peers as a resource
+"""
+
+"""
+How can I actually grow this area by giving me more work that will allow me to develop that skill set?
+"""
+
+## Aesthetic (R)
+```
+# Data visualization
+# ggplot2 library
+
+library("ggplot2")
+library("palmerpenguins")
 
 
+ggplot(data = penguins)+
+  geom_point(mapping = aes(x=flipper_length_mm, y= body_mass_g,shape=species, color=species))
+
+```
+
+## Aesthetics for points 
+    - X
+    - Y
+    - Color
+    - Shape
+    - Size
+    - Alpha
+
+## Geom (R) functions
+    - geom_point
+    - geom_bar
+    - geom_line
 
 
+## Facets (R)
+- Let you display smaller groups, or subsets, of your data
+
+## Facet functions
+    - Facet_wrap()
+    - Facet_grip()
+
+## Annotate
+    - To add notes to a document or diagram to explain or comments upon it
+    - annotate("text",x=220,y=3500,label="The Gentoos are the largest")
+
+## Export option
+## ggsave() function
+
+```
+# Data visualization
+# ggplot2 library
+
+library("ggplot2")
+library("palmerpenguins")
 
 
+ggplot(data = penguins)+
+  geom_point(mapping = aes(x=flipper_length_mm, y= body_mass_g,shape=species))
+
+ggplot(data = penguins)+
+  geom_smooth(mapping = aes(x=flipper_length_mm, y= body_mass_g))
+
+ggplot(data=diamonds)+
+  geom_bar(mapping = aes(x=cut, fill=cut))
 
 
+ggplot(data = penguins)+
+  geom_point(mapping = aes(x=flipper_length_mm, y= body_mass_g,color=species))+
+  labs(title = "Palmer Penguins: Body mass vs. Flipper Length",subtitle = "Sample",
+       caption = "Data collected by Dr. Kristen Gorma")
 
+ggsave("graphics_plot.png")
+```
 
+## R Markdown
+A file format for making dynamic doucments with R
+
+## An overview of R Markdown
+## How to install R Markdown in RStudio
+## How to create an R Markdonw document
+## The structure and components of the document
+## How to insert and edi pieces of code called chunks in your document
+## The process of exporting you documentation
+
+## Markdown 
+    - A syntax for formatting plain text files
+
+## Markdown report output
+    - Add a single undercore or asterisk
+
+## R Notebook
+    - Lets users run your code and show the graphs and charts that visualize the code
+    - HTML, PDF, and Word documents
+
+## HTML
+    - The set of markup symbols or codes used to create a webpage
+
+## Other notebook options
+    - Jupyter
+    - Kaggle
+    - Google Colab
+
+## R Markdown is a great tool for documenting your analysis at any stage
+
+## Installing rmarkdown package
+    - install.packages("rmarkdown")
+
+## YAML
+    - A language for data that translates it so it's readable
+
+"""
+LEarning any programming language is really empowering your only limits are you creativity and your curiosity.
+"""
