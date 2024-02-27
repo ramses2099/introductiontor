@@ -130,5 +130,243 @@ starwars %>%
   summarise(Average_BMI = mean(BMI))
 
 ```
+## Fundamentals of programming using R in RStudio
+    - Coding in RStudio
+    - Syntax for performing calculations
+
+## %>%
+    - Pipes make a sequence of code easier to work with and read
+
+## R Packages
+## Reusable functions and more
+
+## Tidyverse
+## Tidyverse packages
+    - ggplot2 for visualization
+
+## The basic concepts of R
+    - Functions
+    - Comments
+    - Variables
+    - Data types
+    - Vectors
+    - Ppies
+
+## Functions (R)
+A body of reusable code used to perform special tasks in R
+
+## Argument (R)
+Information that a function in R needs in order to run
+
+## print("Hello, World!")
+
+##?print help
+
+## Variable (R)
+A representation of a value in R that can be stored for use later during programming
+
+-A variable name should start with a letter and can also contain numbers and underscores
+
+## Vector (R)
+A group of data elements of the same type stored in a squence in R
+
+## function conbine c()
+    - vec_1  <- c(2,3,34,34)
+
+## Pip (R)
+A tool in R for expressing a sequence of multiple operations, represented with %>%
+
+## Operator
+- A symbol that names the type of operation or calculation to be performed in a formula
+
+## Arithmetic operators
+- Used to complete math calculations
+    +,-,*,/
+
+## Packages include
+- Reusable R functions
+- Documentation about the functions
+- Sample datasets
+- Tests for chekcing your code
+
+## Base R
+## libary()
+
+## CRAN (Comprehensive R Archive Network)
+- An online archive with R packages, source code, manuals, and docuemntation
+
+""" 
+Packages offer a helpful combination fo code, reusable R fucntions, descriptive documentation, test for checking oparbility, and sample data sets
+""""
+
+## Tidyverse (R)
+A system of packages in R with a common design philosophy for data manipulation, exploration, and visualization
+
+## install.packages("tidyverse")
+
+## library("tidyverse")
+
+"""
+Conflicts happen when packages have functions with the same
+names as other functions
+"""
+## 8 core tidyverse packages
+    - ggplot2
+    - tibble
+    - tidyr
+    - readr
+    - purrr
+    - dplyr
+    - stringr
+    - forcats
+
+## Update.packages() will update all of your package
+## Install.packages("package name") will update one package
+
+## Conflict notifications jare just one type of message
+## that can show up in the console
+
+## You might find warnings and messages as well
+
+## Four packages that are an essantial part of the workflow for data analysts:
+    - ggplot2
+    - dplyr
+    - tidyr
+    - readr
+
+## ggplot2(R)
+- Create a variety of data viz applying different visual properties to the data variables in R
+
+## tidyr(R)
+A package used for data cleaning to make tidy data
+
+## readr(R)
+Used for importing data
+
+## dplyr(R)
+Offers a consistent set of functions that help you complete some common data manipulation tasks
+
+## Factors(R)
+Store categorical data in R where the data values are limited and usually based
+on a finite group like country or year
+
+## Nested
+In programming, describes code that performs a particular fuction and is contained within code that performs a broader function
+
+- Call up data(and then)
+- Group the data(and then)
+- Summarize the grouped data using a mean function
+
+## Nested function
+A function that is completely contained within another fuction
+
+## Keyboard shortcuts for inserting pipe operators
+    - PC/Chromebook: ctrl+shift+m
+
+## When using pipes:
+    - Add the pipe operator at the end of each line of the piped
+    operation except the last one
+    - Check your code after you've programmed you pipe
+    - Revisit piped operations to check for parts of your code to fix
+
+"Learning coding was revolutionary for my job"
+
+"""
+An important aspect of any type of script or when you are coding, is to structure it for overall readability.
+"""
+
+"""
+An important aspect for readability and overall understanding of your code
+is using comments
+"""
+
+"""
+Documentation wil explain in depth exactly your code is doing, why i was built, 
+what is the purpose for it and any limitations.
+"""
+
+""" Building it for scalability as well as meking it dynamic """
+
+## Data Frame
+    - A collection of columns
+    
+    - Columns should be named
+    - Data stored can be many different types, like numeric, factor or character
+    - Each column should contain the same number of data items
+
+## Tibbles are like streamlined data frames
+    - Never change the data types of the inputs
+    - Never change the names of your variables
+    - Never create row names
+    - Make printing easier
+
+## Tidy data (R)
+A way of standardizing the organization of data within R
+
+## Tidy data standards
+    - Variables are organized into columns
+    - Observations are organized into rows
+    - Each value must have its own cell
+
+## function R
+    - head()
+    - str()
+    - colnames()
+    - mutate()
+        - mutate(dataset,colname=colname_org * 20)
+
+## packages for cleaning data
+    - Here
+    install.packages("here")
+    - Skimr
+    - Janitor
+
+## install package palmerpenguins
+    - install.packages("palmerpenguins")
+
+    - skim_without_charts()
+    - glimpse()
+        - glimpse(dataset)
+    - head()
+    - select()
+    - rename()
+
+
+## function for arrange data
+    - arrange()
+    - group_by()
+    - filter()
+
+
+## transform data function
+    - separte()
+    - unite()
+    - mutate()
+
+```
+# create data frame
+id <- c(1:4)
+name <- c("Dag Batter","Richart Henniger","Tami Doers","Patrick Jaquet")	
+department <- c("Marketin","Product Management","Services","Support")
+
+employee <- data.frame(id, name, department)
+
+print(employee)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
