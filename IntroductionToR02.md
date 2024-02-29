@@ -25,3 +25,60 @@ section
 --------------------------------------------------------------------------------
 ## Websites to screape the data needed: https://www.kaggle.com/jacksonchour/hr-data-for-analytics
 --------------------------------------------------------------------------------
+## Portfolio
+    - Colletion of case studies that can be shared
+    with potential employers
+
+"In any occupaton, across the globe, across various industries, having a knack and undertanding of data is going to be crucial for everyone"
+
+"One of the fascinating things about being a data analyst is you are a storytaller. You look at the data and every data point out there has a story to tell."
+
+"Make sure your case study answers the question being asked"
+
+"How would you rate Data Partners Real Estate's resale performance in 2020, what's driving these trends, and what would your action plan be?"
+
+"Make sure that you're communicating the steps you've taken and the assumptions you've made"
+
+## The best protfolios are personal, unique, and simple
+
+## Make sure that your portfolio is relevant and presentable
+
+-----------------------------------------------
+## Track1
+-----------------------------------------------
+    - Demonstrate job
+    - Skills for future
+    - Interviews
+-----------------------------------------------
+
+
+-----------------------------------------------
+## Track2
+-----------------------------------------------
+    - Flexibe portfolio
+    - piece about a
+    - personal intersest
+-----------------------------------------------
+
+## What platforms align with your intersts and passions?
+
+## Where do you want to spend more time after this program?
+
+ 1.- Kaggle
+ 2.- Github
+
+ ## Kaggle
+    - Broad data science community
+    - Compettions for users
+    - Learning opportunities
+
+## Tableau
+    - You already have some experience
+    - Focused on the data viz
+    - Create interactive dashboards
+
+## Elevator pitch
+    - A short statement describing an idea or concept
+
+"In this case study, I used real state company data to evaluate resale performance, determine trends, and theorize what was causing them. I was then able to develop an action plan based on those findings."
+
